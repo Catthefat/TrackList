@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C9157BCE2745326F0084E481 /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9157BCD2745326F0084E481 /* MovieViewController.swift */; };
 		C9A56A792744035800021C3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A56A782744035800021C3D /* AppDelegate.swift */; };
 		C9A56A7B2744035800021C3D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A56A7A2744035800021C3D /* SceneDelegate.swift */; };
 		C9A56A7D2744035800021C3D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A56A7C2744035800021C3D /* DetailViewController.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C9157BCD2745326F0084E481 /* MovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
 		C9A56A752744035800021C3D /* TrackList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrackList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9A56A782744035800021C3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9A56A7A2744035800021C3D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				C9A56A7C2744035800021C3D /* DetailViewController.swift */,
 				C9A56A9C27442A5A00021C3D /* MovieTableViewController.swift */,
 				C9A56A9A274429A400021C3D /* MovieTableViewCell.swift */,
+				C9157BCD2745326F0084E481 /* MovieViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9A56A9D27442A5A00021C3D /* MovieTableViewController.swift in Sources */,
+				C9157BCE2745326F0084E481 /* MovieViewController.swift in Sources */,
 				C9A56A7D2744035800021C3D /* DetailViewController.swift in Sources */,
 				C9A56A9F27442FE200021C3D /* Movie.swift in Sources */,
 				C9A56A95274417D200021C3D /* DataManager.swift in Sources */,

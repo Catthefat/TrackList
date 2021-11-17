@@ -46,7 +46,7 @@ class MovieTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
+        return 200
         // makes the items larger in the list!
     }
     
@@ -89,18 +89,18 @@ class MovieTableViewController: UITableViewController {
     // MARK: - Navigation
 
 
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if let indexPath = tableView.indexPathForSelectedRow {
-//            print("Index path:", indexPath)
-//
-////        // Get the new view controller using segue.destination.
-//        let detailVC = segue.destination as! MovieTableViewCell
-//
-////        // Pass the selected object to the new view controller.
-//
-//        detailVC.movie = movies[indexPath.row]
-//    }
-//    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let indexPath = tableView.indexPathForSelectedRow {
+            print("Index path:", indexPath)
+
+//        // Get the new view controller using segue.destination.
+        let detailVC = segue.destination as! MovieViewController
+
+//        // Pass the selected object to the new view controller.
+
+        detailVC.movie = movies[indexPath.row]
+    }
+    }
 
 
 }

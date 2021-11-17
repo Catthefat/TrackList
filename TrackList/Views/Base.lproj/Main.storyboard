@@ -82,22 +82,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieCell" textLabel="27L-X0-Zde" detailTextLabel="no5-O1-2ej" rowHeight="130" style="IBUITableViewCellStyleSubtitle" id="pgK-p5-kfs">
-                                <rect key="frame" x="0.0" y="44.5" width="320" height="130"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieCell" textLabel="27L-X0-Zde" detailTextLabel="no5-O1-2ej" rowHeight="200" style="IBUITableViewCellStyleSubtitle" id="pgK-p5-kfs">
+                                <rect key="frame" x="0.0" y="44.5" width="320" height="200"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pgK-p5-kfs" id="VlC-Q4-3Lw">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="130"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="27L-X0-Zde">
-                                            <rect key="frame" x="16" y="49" width="25" height="14.5"/>
+                                            <rect key="frame" x="16" y="84" width="25" height="14.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="no5-O1-2ej">
-                                            <rect key="frame" x="16" y="65.5" width="30.5" height="13.5"/>
+                                            <rect key="frame" x="16" y="100.5" width="30.5" height="13.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                             <nil key="textColor"/>
@@ -124,7 +124,7 @@
         <!--Movie-->
         <scene sceneID="GxX-6d-XGc">
             <objects>
-                <viewController title="Movie" hidesBottomBarWhenPushed="YES" id="ylg-R5-Vhz" customClass="vMovieTableViewCell" customModule="TrackList" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Movie" hidesBottomBarWhenPushed="YES" id="ylg-R5-Vhz" customClass="MovieViewController" customModule="TrackList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EZH-LD-N8U">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -159,6 +159,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="BMe-44-rra"/>
+                    <connections>
+                        <outlet property="MovieImageView" destination="a4n-gt-jrf" id="18w-xz-NR1"/>
+                        <outlet property="movieNameLabel" destination="Tc7-Md-tYl" id="tDg-Na-luq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XJM-Ri-8Eh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
